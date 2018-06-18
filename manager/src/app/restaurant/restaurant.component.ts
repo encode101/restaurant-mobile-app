@@ -11,6 +11,7 @@ import { RestaurantService } from '../restaurant.service';
 })
 export class RestaurantComponent implements OnInit {
   restaurantData: any;
+  allRestaurant: any;
   constructor(private _restaurant: RestaurantService) {
     
    }
@@ -19,6 +20,7 @@ export class RestaurantComponent implements OnInit {
     this.restaurantData = this._restaurant.getConfig()
     this.restaurantData.subscribe((data)=>{
       console.log(data)
+      this.allRestaurant = data
     });
   }
 
