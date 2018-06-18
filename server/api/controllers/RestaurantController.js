@@ -9,7 +9,6 @@ module.exports = {
     findOne: async function(req, res) {
         let data = await Restaurant.getRestaurant('5b27653039ffda2f8437fd3e');
         return res.send(data);
-        console.log('here')
     }
 };
 
