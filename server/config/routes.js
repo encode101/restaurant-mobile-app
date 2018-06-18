@@ -27,6 +27,7 @@ module.exports.routes = {
   '/': {
     view: 'pages/homepage'
   },
+  '/menu/:restaurant': 'MenuController.getRestaurantMenu'
 
   /***************************************************************************
   *                                                                          *
