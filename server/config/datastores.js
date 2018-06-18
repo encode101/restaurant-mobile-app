@@ -53,7 +53,10 @@
 
   },
 
+  restaurant: {
+    adapter: 'sails-mongo',
+    url: 'mongodb://hemal:abcindia@cluster0-shard-00-00-2sekh.mongodb.net:27017,cluster0-shard-00-01-2sekh.mongodb.net:27017,cluster0-shard-00-02-2sekh.mongodb.net:27017/users?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true',
+    ssl: true
+  }
   
-
-
 };
