@@ -1,0 +1,6 @@
+<ul>
+  <li *ngFor="let rest of allRestaurant">
+    {{rest.name}}
+    <span *ngIf="rest.menuId"> - {{rest.menuId.description}}</span>
+  </li>
+</ul>

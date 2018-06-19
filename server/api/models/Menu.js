@@ -8,6 +8,9 @@
 module.exports = {
   datastore: "restaurant",
   attributes: {
+    "description": {
+      type: 'string'
+    }
   },
   createMenuOption: async function(menuObj){
     return await Menu.create(menuObj);
