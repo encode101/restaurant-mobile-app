@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700');
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
+
+body{font-family: 'roboto', sans-serif; font-size: 14px; line-height: 18px;}
+.expansionBody{height: 100px;}
+.mat-expanded{background: teal; color: #FFF;}

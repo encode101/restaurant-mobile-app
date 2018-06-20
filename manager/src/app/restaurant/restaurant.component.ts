@@ -12,13 +12,17 @@ import { RestaurantService } from '../restaurant.service';
 export class RestaurantComponent implements OnInit {
   restaurantData: any;
   allRestaurant: any;
+  menu = {};
   constructor(private _restaurant: RestaurantService) {
     
    }
 
   ngOnInit() {
+    this.menu = {
+        "name": "google"
+    };
     this.restaurantData = this._restaurant.getConfig()
-    this.restaurantData.subscribe((data)=>{
+    this.restaurantData.subscribe((data)=> {
       console.log(data)
       this.allRestaurant = data
     });

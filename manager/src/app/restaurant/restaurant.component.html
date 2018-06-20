@@ -1,6 +1,50 @@
-<ul>
-  <li *ngFor="let rest of allRestaurant">
-    {{rest.name}}
-    <span *ngIf="rest.menuId"> - {{rest.menuId.description}}</span>
-  </li>
-</ul>
+
+<!-- <mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>Shiba Inu</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <ul>
+      <li *ngFor="let rest of allRestaurant">
+        {{rest.name}}
+        <span *ngIf="rest.menuId"> - {{rest.menuId.description}}</span>
+      </li>
+    </ul>    
+  </mat-card-content>
+</mat-card> 
+<mat-form-field class="ml20">
+  <input name="mobileNo" class="cust-pos" matInput type="text" placeholder="Enter Your Name"  />
+</mat-form-field>
+-->
+
+<mat-expansion-panel *ngFor="let rest of allRestaurant">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+        {{rest.name}}
+    </mat-panel-title>
+    <mat-panel-description>
+        <span *ngIf="rest.menuId">{{rest.menuId.description}}</span>
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <div class="expansionBody">
+   <form>
+      <mat-form-field class="formElement">
+        <label></label>
+        <input name="mobileNo" class="cust-pos" matInput type="text" name="name" placeholder="Menu Name" [(ngModel)]="menu.name" />
+      </mat-form-field>
+      <mat-form-field class="formElement">
+        <label></label>
+        <input name="mobileNo" class="cust-pos" matInput type="text" placeholder="Price" name="price" [(ngModel)]="menu.price"  />
+      </mat-form-field>
+      <mat-form-field class="formElement">
+        <label></label>
+        <input name="mobileNo" class="cust-pos" matInput type="text" placeholder="Description" name="description" [(ngModel)]="menu.description"  />
+      </mat-form-field>
+      <mat-form-field class="formElement">
+          <label></label>
+          <input name="mobileNo" class="cust-pos" matInput type="text" placeholder="imageUrl" name="ImageUrl" [(ngModel)]="menu.imageUrl"  />
+        </mat-form-field>
+   </form>
+  </div>
+</mat-expansion-panel>
