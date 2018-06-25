@@ -7,4 +7,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+  events: string[] = [];
+  opened: boolean;
+  shouldRun: boolean;
+  
+  ngOnInit() {
+    this.opened = true;
+    this.shouldRun = true;
+  }
+
 }

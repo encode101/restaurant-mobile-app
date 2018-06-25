@@ -47,7 +47,6 @@ import {
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
-
 const appRoutes: Routes = [
   { path: '', component: RestaurantComponent},
   { path: 'auth', component: AuthComponent}

@@ -13,6 +13,12 @@ export class RestaurantComponent implements OnInit {
   restaurantData: any;
   allRestaurant: any;
   menu = {};
+  public firstname?: string;
+    public lastname?: string;
+    public address?: string;
+    public city?: string;
+    public state?: string;
+    public postalcode?: string
   constructor(private _restaurant: RestaurantService) {
     
    }
